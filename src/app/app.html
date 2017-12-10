@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+    <ion-content padding>
+        <h4>Menu</h4>
+        <ion-list>
+                <button ion-item (click)="navigateToHome()">
+                  Home
+                </button>
+                <button ion-item (click)="navigateToToDo()">
+                  To Do List
+                </button>
+                <button ion-item (click)="navigateToAbout()">
+                  About
+                </button>
+
+              </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>
+
+<!--  Mirva Kataja 1501537, Jani Antoniou 1601110 -->  
